@@ -10,4 +10,6 @@ abstract class AppImages {
   static const String transaction = 'assets/images/my_transaction.svg';
   static const String statistics = 'assets/images/statistics.svg';
   static const String wallet = 'assets/images/wallet.svg';
+  static const String settings = 'assets/images/setting-2.svg';
+  static const String logout = 'assets/images/logout.svg';
 }

@@ -13,23 +13,23 @@ class DrawerItemsListView extends StatefulWidget {
 
 class _DrawerItemsListViewState extends State<DrawerItemsListView> {
   final List<DrawerItemModel> items = [
-    DrawerItemModel(
+    const DrawerItemModel(
       image: AppImages.dashboard,
       title: 'Dashboard',
     ),
-    DrawerItemModel(
+    const DrawerItemModel(
       image: AppImages.transaction,
       title: 'My Transaction',
     ),
-    DrawerItemModel(
+    const DrawerItemModel(
       image: AppImages.statistics,
       title: 'Statistics',
     ),
-    DrawerItemModel(
+    const DrawerItemModel(
       image: AppImages.wallet,
       title: 'Wallet Account',
     ),
-    DrawerItemModel(
+    const DrawerItemModel(
       image: AppImages.investments,
       title: 'My Investments',
     ),
@@ -39,9 +39,7 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
+    return SliverList.separated(
       itemCount: items.length,
       itemBuilder: (context, index) => InkWell(
         onTap: () {
