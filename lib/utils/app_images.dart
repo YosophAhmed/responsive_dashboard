@@ -2,7 +2,7 @@ abstract class AppImages {
   static const String avatar1 = 'assets/images/avatar1.svg';
   static const String avatar2 = 'assets/images/avatar2.svg';
   static const String balance = 'assets/images/balance.svg';
-  static const String creditCard = 'assets/images/credit_card.svg';
+  static const String creditCard = 'assets/images/credit_card.png';
   static const String dashboard = 'assets/images/dashboard.svg';
   static const String expenses = 'assets/images/expenses.svg';
   static const String income = 'assets/images/income.svg';
