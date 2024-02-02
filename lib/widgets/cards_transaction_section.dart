@@ -13,7 +13,7 @@ class CardsTransactionSection extends StatelessWidget {
         children: [
           CardsSection(),
           Divider(
-            height: 40,
+            height: 20,
             color: Color(0xFFF1F1F1),
           ),
           TransactionHistory(),
