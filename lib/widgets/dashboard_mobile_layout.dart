@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'all_expenses_quick_invoice_section.dart';
 import 'cards_transaction_section.dart';
 
+
 class DashBoardMobileLayout extends StatelessWidget {
   const DashBoardMobileLayout({super.key});
 
@@ -23,7 +24,6 @@ class DashBoardMobileLayout extends StatelessWidget {
               ),
               child: CardsTransactionSection(),
             ),
-            // IncomeSection(),
           ],
         ),
       ),

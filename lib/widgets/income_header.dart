@@ -9,9 +9,11 @@ class IncomeHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text(
+        Text(
           'Income',
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(
+            context: context,
+          ),
         ),
         Container(
           padding: const EdgeInsets.symmetric(
@@ -30,16 +32,18 @@ class IncomeHeader extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          child: const Row(
+          child: Row(
             children: [
               Text(
                 'Monthly',
-                style: AppStyles.styleMedium16,
+                style: AppStyles.styleMedium16(
+                  context: context,
+                ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 16,
               ),
-              Icon(
+              const Icon(
                 Icons.keyboard_arrow_down,
               ),
             ],

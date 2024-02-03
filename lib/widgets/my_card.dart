@@ -31,13 +31,17 @@ class MyCard extends StatelessWidget {
               contentPadding: EdgeInsets.zero,
               title: Text(
                 'Name Card',
-                style: AppStyles.styleRegular16.copyWith(
+                style: AppStyles.styleRegular16(
+                  context: context,
+                ).copyWith(
                   color: Colors.white,
                 ),
               ),
-              subtitle: const Text(
+              subtitle: Text(
                 'Yosoph Ahmed',
-                style: AppStyles.styleMedium20,
+                style: AppStyles.styleMedium20(
+                  context: context,
+                ),
               ),
               trailing: const Icon(
                 Icons.image_outlined,
@@ -47,13 +51,17 @@ class MyCard extends StatelessWidget {
             const Spacer(),
             Text(
               '0111100201111002',
-              style: AppStyles.styleSemiBold24.copyWith(
+              style: AppStyles.styleSemiBold24(
+                context: context,
+              ).copyWith(
                 color: Colors.white,
               ),
             ),
             Text(
               '12/20 - 124',
-              style: AppStyles.styleRegular16.copyWith(
+              style: AppStyles.styleRegular16(
+                context: context,
+              ).copyWith(
                 color: Colors.white,
               ),
             ),

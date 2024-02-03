@@ -6,14 +6,16 @@ class QuickInvoiceHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           'Quick Invoice',
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(
+            context: context,
+          ),
         ),
-        Icon(
+        const Icon(
           Icons.add,
           color: Color(0xFF4EB7F2),
         ),

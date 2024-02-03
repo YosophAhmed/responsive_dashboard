@@ -22,6 +22,10 @@ class InActiveAllExpensesItem extends StatelessWidget {
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
+          side: const BorderSide(
+            width: 1,
+            color: Color(0xFFF1F1F1),
+          ),
           borderRadius: BorderRadius.circular(12),
         ),
       ),
@@ -34,23 +38,38 @@ class InActiveAllExpensesItem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(
-            itemModel.title,
-            style: AppStyles.styleMedium16,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.title,
+              style: AppStyles.styleMedium16(
+                context: context,
+              ),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            itemModel.date,
-            style: AppStyles.styleRegular14,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.date,
+              style: AppStyles.styleRegular14(
+                context: context,
+              ),
+            ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            itemModel.price,
-            style: AppStyles.styleSemiBold24,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.price,
+              style: AppStyles.styleSemiBold24(
+                context: context,
+              ),
+            ),
           ),
         ],
       ),
